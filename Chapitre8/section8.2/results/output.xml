@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-11-22T12:51:51.314696" rpa="false" schemaversion="5">
+<suite id="s1" name="Section8.3" source="C:\Users\Admin\Projects\rbf_book\Sources\tests\section8.3">
+<suite id="s1-s1" name="Batteur" source="C:\Users\Admin\Projects\rbf_book\Sources\tests\section8.3\batteur.robot">
+<test id="s1-s1-t1" name="Rythme Beau" line="8">
+<kw name="Acceder a Musicca Batterie" owner="rythmes">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-22T12:51:51.584696" level="INFO">Opening browser 'chrome' to base url 'https://www.musicca.com/fr/batterie/'.</msg>
+<arg>https://www.musicca.com/fr/batterie/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-22T12:51:51.584696" elapsed="2.553319"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-22T12:51:54.139016" elapsed="0.017744"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:51.583695" elapsed="2.573065"/>
+</kw>
+<kw name="Accepter Cookies" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:51:54.156760" elapsed="0.407201"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Rythme1" owner="rythmes">
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:51:54.565491" elapsed="0.101698"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:51:55.002049" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:51:54.667189" elapsed="0.334860"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:54.667189" elapsed="0.334860"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:51:55.002049" elapsed="0.103216"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:51:55.443195" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:51:55.106279" elapsed="0.336916"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:55.106279" elapsed="0.336916"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:51:55.444703" elapsed="0.103971"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:51:55.882915" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:51:55.548674" elapsed="0.334241"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:55.548674" elapsed="0.334241"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:51:55.882915" elapsed="0.101813"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:51:56.318621" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:51:55.985239" elapsed="0.334403"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:55.984728" elapsed="0.334914"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:51:56.319642" elapsed="0.102289"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:51:56.756444" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:51:56.422947" elapsed="0.333497"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:56.421931" elapsed="0.334513"/>
+</kw>
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:51:56.756444" elapsed="0.102333"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:51:57.193373" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:51:56.860042" elapsed="0.333331"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:56.858777" elapsed="0.334596"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:51:57.193373" elapsed="0.102888"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:51:57.630647" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:51:57.297273" elapsed="0.333887"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:57.296261" elapsed="0.334899"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:51:57.631160" elapsed="0.103162"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:51:58.068197" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:51:57.734833" elapsed="0.333364"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:57.734322" elapsed="0.333875"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:54.565491" elapsed="3.502706"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2024-11-22T12:51:54.564974" elapsed="3.503223"/>
+</iter>
+<iter>
+<kw name="Rythme1" owner="rythmes">
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:51:58.069302" elapsed="0.101685"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:51:58.504888" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:51:58.171578" elapsed="0.333816"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:58.170987" elapsed="0.334407"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:51:58.505394" elapsed="0.102058"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:51:58.942100" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:51:58.608459" elapsed="0.333641"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:58.607452" elapsed="0.334648"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:51:58.943141" elapsed="0.101836"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:51:59.382362" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:51:59.048137" elapsed="0.334225"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:59.048137" elapsed="0.334225"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:51:59.383371" elapsed="0.101785"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:51:59.820007" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:51:59.485156" elapsed="0.334851"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:59.485156" elapsed="0.334851"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:51:59.820007" elapsed="0.102770"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:00.258155" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:51:59.923920" elapsed="0.334235"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:59.922777" elapsed="0.335378"/>
+</kw>
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:00.259162" elapsed="0.101445"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:00.694686" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:00.360607" elapsed="0.334586"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:00.360607" elapsed="0.335590"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:00.696197" elapsed="0.102413"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:01.132824" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:00.799118" elapsed="0.333706"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:00.799118" elapsed="0.334729"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:01.133847" elapsed="0.102962"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:01.572105" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:01.237823" elapsed="0.334282"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:01.236809" elapsed="0.336311"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:51:58.069302" elapsed="3.503818"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-11-22T12:51:58.068197" elapsed="3.504923"/>
+</iter>
+<iter>
+<kw name="Rythme1" owner="rythmes">
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:01.575674" elapsed="0.102700"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:02.012885" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:01.679508" elapsed="0.333973"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:01.678374" elapsed="0.335107"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:02.013481" elapsed="0.103948"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:02.452554" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:02.118452" elapsed="0.334102"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:02.117429" elapsed="0.336322"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:02.453751" elapsed="0.102608"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:02.891329" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:02.556878" elapsed="0.334952"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:02.556878" elapsed="0.334952"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:02.891830" elapsed="0.101707"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:03.328279" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:02.995049" elapsed="0.333230"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:02.993537" elapsed="0.334742"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:03.328279" elapsed="0.102258"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:03.763926" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:03.430537" elapsed="0.333389"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:03.430537" elapsed="0.334392"/>
+</kw>
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:03.764929" elapsed="0.101715"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:04.199747" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:03.866644" elapsed="0.333688"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:03.866644" elapsed="0.333688"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:04.200332" elapsed="0.103296"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:04.638016" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:04.304738" elapsed="0.333278"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:04.303628" elapsed="0.334915"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:04.638543" elapsed="0.101620"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:05.074642" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:04.740163" elapsed="0.335017"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:04.740163" elapsed="0.335017"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:01.574630" elapsed="3.500550"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2024-11-22T12:52:01.573120" elapsed="3.502060"/>
+</iter>
+<iter>
+<kw name="Rythme1" owner="rythmes">
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:05.075180" elapsed="0.106349"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:05.515313" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:05.181529" elapsed="0.333784"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:05.181529" elapsed="0.334920"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:05.516449" elapsed="0.102632"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:05.952681" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:05.619081" elapsed="0.333600"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:05.619081" elapsed="0.334616"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:05.953697" elapsed="0.102429"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:06.391533" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:06.056126" elapsed="0.336337"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:06.056126" elapsed="0.336337"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:06.393464" elapsed="0.103234"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:06.829862" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:06.496698" elapsed="0.333164"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:06.496698" elapsed="0.333164"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:06.829862" elapsed="0.102643"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:07.265728" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:06.932505" elapsed="0.333223"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:06.932505" elapsed="0.333223"/>
+</kw>
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:07.267133" elapsed="0.102388"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:07.702835" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:07.369521" elapsed="0.333314"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:07.369521" elapsed="0.334329"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:07.703850" elapsed="0.102539"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:08.141368" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:07.806389" elapsed="0.335985"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:07.806389" elapsed="0.336795"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:08.143405" elapsed="0.103272"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:08.580223" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:08.246677" elapsed="0.333546"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:08.246677" elapsed="0.334568"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:05.075180" elapsed="3.506065"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2024-11-22T12:52:05.075180" elapsed="3.506065"/>
+</iter>
+<iter>
+<kw name="Rythme1" owner="rythmes">
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:08.583251" elapsed="0.103301"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:09.020023" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:08.686552" elapsed="0.333471"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:08.686552" elapsed="0.334487"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:09.021039" elapsed="0.103039"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:09.460026" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:09.125851" elapsed="0.334175"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:09.124816" elapsed="0.336229"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:09.461045" elapsed="0.103847"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:09.898192" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:09.564892" elapsed="0.333300"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:09.564892" elapsed="0.334317"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:09.899209" elapsed="0.103149"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:10.335841" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:10.002358" elapsed="0.333992"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:10.002358" elapsed="0.333992"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:10.336350" elapsed="0.103542"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:10.773385" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:10.439892" elapsed="0.333493"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:10.439892" elapsed="0.333493"/>
+</kw>
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:10.775273" elapsed="0.103090"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:11.211770" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:10.878363" elapsed="0.333407"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:10.878363" elapsed="0.333407"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:11.211770" elapsed="0.104195"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:11.649147" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:11.315965" elapsed="0.333182"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:11.315965" elapsed="0.334312"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:11.650277" elapsed="0.103289"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:12.088339" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:11.754669" elapsed="0.333670"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:11.753566" elapsed="0.335791"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:08.582244" elapsed="3.507113"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2024-11-22T12:52:08.581245" elapsed="3.508112"/>
+</iter>
+<iter>
+<kw name="Rythme1" owner="rythmes">
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:12.092323" elapsed="0.102197"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:12.528648" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:12.195235" elapsed="0.333413"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:12.194520" elapsed="0.335229"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:12.529749" elapsed="0.103340"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:12.966570" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:12.633089" elapsed="0.333481"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:12.633089" elapsed="0.334495"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:12.967584" elapsed="0.103204"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:13.404510" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:13.070788" elapsed="0.334330"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:13.070788" elapsed="0.334330"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:13.405118" elapsed="0.103443"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:13.843324" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:13.508561" elapsed="0.334763"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:13.508561" elapsed="0.334763"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:13.843324" elapsed="0.104019"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:14.280474" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:13.947343" elapsed="0.333131"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:13.947343" elapsed="0.333131"/>
+</kw>
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:14.281606" elapsed="0.102558"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:14.718261" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:14.384783" elapsed="0.333992"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:14.384164" elapsed="0.334611"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:14.718775" elapsed="0.103773"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:15.158152" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:14.822548" elapsed="0.336296"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:14.822548" elapsed="0.336296"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:15.159849" elapsed="0.102927"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:15.596192" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:15.262776" elapsed="0.333416"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:15.262776" elapsed="0.334522"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:12.090357" elapsed="3.506941"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2024-11-22T12:52:12.089357" elapsed="3.507941"/>
+</iter>
+<iter>
+<kw name="Rythme1" owner="rythmes">
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:15.599296" elapsed="0.102835"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:16.036902" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:15.703568" elapsed="0.333334"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:15.702131" elapsed="0.334771"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:16.036902" elapsed="0.103870"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:16.474086" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:16.140772" elapsed="0.333840"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:16.140772" elapsed="0.333840"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:16.474612" elapsed="0.104505"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:16.912665" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:16.579117" elapsed="0.333548"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:16.579117" elapsed="0.333548"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:16.912665" elapsed="0.103996"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:17.350021" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:17.016661" elapsed="0.333360"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:17.016661" elapsed="0.333360"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:17.350021" elapsed="0.104319"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:17.788133" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:17.454967" elapsed="0.333166"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:17.454340" elapsed="0.333793"/>
+</kw>
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:17.788133" elapsed="0.102169"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:18.223706" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:17.890302" elapsed="0.334440"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:17.890302" elapsed="0.334440"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:18.224742" elapsed="0.103358"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:18.661833" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:18.328668" elapsed="0.333165"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:18.328668" elapsed="0.333165"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:18.661833" elapsed="0.102180"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:19.098045" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:18.764635" elapsed="0.333410"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:18.764013" elapsed="0.334032"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:15.598296" elapsed="3.499749"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2024-11-22T12:52:15.597298" elapsed="3.500747"/>
+</iter>
+<iter>
+<kw name="Rythme1" owner="rythmes">
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:19.098045" elapsed="0.103470"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:19.535206" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:19.201515" elapsed="0.333691"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:19.201515" elapsed="0.333691"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:19.535206" elapsed="0.105725"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:19.974442" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:19.640931" elapsed="0.334183"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:19.640931" elapsed="0.334183"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:19.975114" elapsed="0.104402"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:20.413108" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:20.079516" elapsed="0.333592"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:20.079516" elapsed="0.333592"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:20.413108" elapsed="0.103061"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:20.850386" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:20.517218" elapsed="0.333168"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:20.516169" elapsed="0.334217"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:20.850386" elapsed="0.101683"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:21.285583" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:20.952069" elapsed="0.333514"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:20.952069" elapsed="0.333514"/>
+</kw>
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:21.286679" elapsed="0.103433"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:21.725539" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:21.391128" elapsed="0.335833"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:21.390112" elapsed="0.336849"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:21.726961" elapsed="0.103365"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:22.165291" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:21.831426" elapsed="0.333865"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:21.830326" elapsed="0.335971"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:22.166297" elapsed="0.103200"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:22.604699" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:22.270512" elapsed="0.334187"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:22.269497" elapsed="0.335202"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:19.098045" elapsed="3.507938"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2024-11-22T12:52:19.098045" elapsed="3.507938"/>
+</iter>
+<iter>
+<kw name="Rythme1" owner="rythmes">
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:22.608987" elapsed="0.102630"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:23.046912" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:22.712632" elapsed="0.334280"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:22.711617" elapsed="0.335295"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:23.047920" elapsed="0.102721"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:23.486293" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:23.151657" elapsed="0.334636"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:23.150641" elapsed="0.336750"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:23.487391" elapsed="0.102689"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T12:52:23.924835" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T12:52:23.590675" elapsed="0.334668"/>
+</kw>
+<status status="PASS" start="2024-11-22T12:52:23.590675" elapsed="0.334668"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T12:52:23.925343" elapsed="0.102732"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="FAIL" start="2024-11-22T12:52:24.028075" elapsed="0.303554">Execution terminated by signal</status>
+</kw>
+<status status="FAIL" start="2024-11-22T12:52:24.028075" elapsed="0.304554">Execution terminated by signal</status>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="NOT RUN" start="2024-11-22T12:52:24.332629" elapsed="0.000546"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<status status="NOT RUN" start="2024-11-22T12:52:24.333175" elapsed="0.000000"/>
+</kw>
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="NOT RUN" start="2024-11-22T12:52:24.333175" elapsed="0.000000"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<status status="NOT RUN" start="2024-11-22T12:52:24.333175" elapsed="0.000000"/>
+</kw>
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="NOT RUN" start="2024-11-22T12:52:24.333175" elapsed="0.000000"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<status status="NOT RUN" start="2024-11-22T12:52:24.333175" elapsed="0.000000"/>
+</kw>
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="NOT RUN" start="2024-11-22T12:52:24.333175" elapsed="0.000000"/>
+</kw>
+<kw name="bpm" owner="rythmes">
+<status status="NOT RUN" start="2024-11-22T12:52:24.333175" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-11-22T12:52:22.607060" elapsed="1.727705">Execution terminated by signal</status>
+</kw>
+<var name="${i}">8</var>
+<status status="FAIL" start="2024-11-22T12:52:22.605983" elapsed="1.728868">Execution terminated by signal</status>
+</iter>
+<var>${i}</var>
+<value>10</value>
+<status status="FAIL" start="2024-11-22T12:51:54.563961" elapsed="29.770890">Execution terminated by signal</status>
+</for>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-11-22T12:52:24.334851" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-11-22T12:51:51.582696" elapsed="32.753081">Execution terminated by signal</status>
+</test>
+<status status="FAIL" start="2024-11-22T12:51:51.338669" elapsed="32.999116"/>
+</suite>
+<status status="FAIL" start="2024-11-22T12:51:51.319074" elapsed="33.028287"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Section8.3">Section8.3</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Batteur">Section8.3.Batteur</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

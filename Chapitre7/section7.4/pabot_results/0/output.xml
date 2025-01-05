@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-11-19T01:39:30.040919" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests1" source="C:\Users\Admin\Projects\rbf_book\Sources\tests\section7.4\tests1">
+<suite id="s1-s1" name="Test" source="C:\Users\Admin\Projects\rbf_book\Sources\tests\section7.4\tests1\test.robot">
+<test id="s1-s1-t1" name="testcase" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-19T01:39:30.238770" level="INFO">Opening browser 'chrome' to base url 'http://www.google.com'.</msg>
+<arg>http://www.google.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-19T01:39:30.238770" elapsed="2.918583"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-19T01:39:33.157353" elapsed="0.065956"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-19T01:39:33.224312" elapsed="3.302970"/>
+</kw>
+<tag>tag</tag>
+<status status="PASS" start="2024-11-19T01:39:30.238770" elapsed="6.288512"/>
+</test>
+<status status="PASS" start="2024-11-19T01:39:30.078598" elapsed="6.449673"/>
+</suite>
+<status status="PASS" start="2024-11-19T01:39:30.062829" elapsed="6.466117"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">tag</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests1">Tests1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test">Tests1.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

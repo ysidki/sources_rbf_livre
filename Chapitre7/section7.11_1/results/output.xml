@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-11-20T23:29:14.807190" rpa="false" schemaversion="5">
+<suite id="s1" name="Section7.11" source="C:\Users\Admin\Projects\rbf_book\Sources\tests\section7.11">
+<suite id="s1-s1" name="Test" source="C:\Users\Admin\Projects\rbf_book\Sources\tests\section7.11\test.robot">
+<test id="s1-s1-t1" name="Test Dynamic Library" line="16">
+<kw name="Dynamic Keyword One" owner="MyDynamicLibrary">
+<msg time="2024-11-20T23:29:14.855436" level="INFO">Executing dynamic keyword one</msg>
+<status status="PASS" start="2024-11-20T23:29:14.855436" elapsed="0.000000"/>
+</kw>
+<kw name="Dynamic Keyword Two" owner="MyDynamicLibrary">
+<msg time="2024-11-20T23:29:14.856962" level="INFO">Executing dynamic keyword two with ('Argument',)</msg>
+<arg>Argument</arg>
+<status status="PASS" start="2024-11-20T23:29:14.856962" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-11-20T23:29:14.847105" elapsed="0.010888"/>
+</test>
+<status status="PASS" start="2024-11-20T23:29:14.840964" elapsed="0.018357"/>
+</suite>
+<status status="PASS" start="2024-11-20T23:29:14.807190" elapsed="0.052131"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Section7.11">Section7.11</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test">Section7.11.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

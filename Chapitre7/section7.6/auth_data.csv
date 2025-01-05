@@ -1,0 +1,4 @@
+*** Test Case ***;EMAIL;PASSWORD
+Authentification Valide;valid@email.com;ValidPass1
+Authentification Invalide 1;invalid@email.com;WrongPass
+Authentification Invalide 2;;EmptyPass

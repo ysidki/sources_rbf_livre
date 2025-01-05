@@ -1,0 +1,12 @@
+environment:
+  dev:
+    url: http://dev.example.com
+    timeout: 20
+  prod:
+    url: http://prod.example.com
+    timeout: 30
+users:
+  - username: admin
+    password: admin123
+  - username: guest
+    password: guest456

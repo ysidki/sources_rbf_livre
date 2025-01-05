@@ -1,0 +1,19 @@
+À partir des mots-clés suivants : Cymbale Crash, Cymbale Ride, Hi Hat Ferme, Hi Hat Ouvert, Hi Hat Pied, Tom Aigu, Tom Grave, Tom Bas, Caisse Claire, Caisse Claire Baguettes, Grosse Caisse, Hi Hat Ouvert et Grosse Caisse, génère un mot-clé Robot Framework représentant un rythme de s’inspirant du rythme suivant : 
+    Hi Hat Ferme
+    Grosse Caisse
+    bpm
+    Hi Hat Ferme
+    bpm
+    Caisse Claire
+    bpm
+    Hi Hat Ferme
+    bpm
+    Hi Hat Ferme
+    bpm
+    Grosse Caisse
+    bpm
+    Caisse Claire
+    bpm
+    Hi Hat Ferme
+    Bpm
+Ne génère aucun composant Robot Framework, génère que la suite des mots-clés déjà fournis, sans aucun autre texte, chaque mot clé est séparé d'un autre par un saut de ligne

@@ -1,0 +1,2 @@
+C:\Users\Admin\Projects\rbf_book\Sources\Sources_rbf_livre\Chapitre4\windows\.eni\Scripts\ride.py
+C:\Users\Admin\AppData\Local\Programs\Python\Python311\Scripts\ride.py

@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+    stages {
+        stage('Prepare') {
+            steps {
+                sh 'pip install robotframework robotframework-seleniumlibrary'
+                git url: 'https://example.com/repo.git'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'robot -d results repo/tests/'
+            }
+        }
+        stage('Analyze') {
+            steps {
+                echo 'Analyzing results'
+            }
+        }
+    }
+    post {
+        always {
+            archiveArtifacts artifacts: 'results/**'
+            junit 'results/output.xml'
+        }
+    }
+}

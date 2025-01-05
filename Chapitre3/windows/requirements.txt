@@ -1,0 +1,4 @@
+robotframework==7.1
+robotframework-seleniumlibrary==6.2.0
+robotframework-ride==2.0.8.1
+pyautogui==0.9.54

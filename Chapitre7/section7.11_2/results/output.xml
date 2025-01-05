@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-11-23T02:55:48.409411" rpa="false" schemaversion="5">
+<suite id="s1" name="Section7.11 2" source="C:\Users\Admin\Projects\rbf_book\Sources\tests\section7.11_2">
+<suite id="s1-s1" name="Desktop" source="C:\Users\Admin\Projects\rbf_book\Sources\tests\section7.11_2\desktop">
+<suite id="s1-s1-s1" name="Blocnotes" source="C:\Users\Admin\Projects\rbf_book\Sources\tests\section7.11_2\desktop\blocnotes">
+<suite id="s1-s1-s1-s1" name="Tests" source="C:\Users\Admin\Projects\rbf_book\Sources\tests\section7.11_2\desktop\blocnotes\tests">
+<suite id="s1-s1-s1-s1-s1" name="Blocnote" source="C:\Users\Admin\Projects\rbf_book\Sources\tests\section7.11_2\desktop\blocnotes\tests\blocnote.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Test Notepad Application" line="17">
+<kw name="Launch Application" owner="FlaUILibrary">
+<msg time="2024-11-23T02:55:48.979904" level="INFO">${pid} = 3140</msg>
+<var>${pid}</var>
+<arg>${NOTEPAD_PATH}</arg>
+<doc>Launches an application.</doc>
+<status status="PASS" start="2024-11-23T02:55:48.888346" elapsed="0.091558"/>
+</kw>
+<kw name="Wait Until Element Exist" owner="FlaUILibrary">
+<arg>identifier=${menu_file}</arg>
+<doc>Waits until element exist or timeout was reached. If timeout was reached an FlaUIError occurred.</doc>
+<status status="PASS" start="2024-11-23T02:55:48.980857" elapsed="0.187002"/>
+</kw>
+<kw name="Click" owner="FlaUILibrary">
+<arg>${menu_file}</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" start="2024-11-23T02:55:49.167859" elapsed="0.267678"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-23T02:55:49.937692" level="INFO">Slept 500 milliseconds.</msg>
+<arg>500ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-23T02:55:49.436819" elapsed="0.500873"/>
+</kw>
+<kw name="Press Key" owner="FlaUILibrary">
+<arg>s'DOWN'</arg>
+<arg>None</arg>
+<doc>Keyboard control to execute a user defined one shortcut or text.
+press_only and release_only supports key shortcut only, not text.</doc>
+<status status="PASS" start="2024-11-23T02:55:49.937692" elapsed="0.009550"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-23T02:55:50.447553" level="INFO">Slept 500 milliseconds.</msg>
+<arg>500ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-23T02:55:49.947242" elapsed="0.500311"/>
+</kw>
+<kw name="Press Key" owner="FlaUILibrary">
+<arg>s'UP'</arg>
+<arg>None</arg>
+<doc>Keyboard control to execute a user defined one shortcut or text.
+press_only and release_only supports key shortcut only, not text.</doc>
+<status status="PASS" start="2024-11-23T02:55:50.447553" elapsed="0.004011"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-23T02:55:50.952281" level="INFO">Slept 500 milliseconds.</msg>
+<arg>500ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-23T02:55:50.451564" elapsed="0.500717"/>
+</kw>
+<kw name="Press Key" owner="FlaUILibrary">
+<arg>s'ENTER'</arg>
+<arg>None</arg>
+<doc>Keyboard control to execute a user defined one shortcut or text.
+press_only and release_only supports key shortcut only, not text.</doc>
+<status status="PASS" start="2024-11-23T02:55:50.952281" elapsed="0.003294"/>
+</kw>
+<kw name="Set Text To Textbox" owner="FlaUILibrary">
+<msg time="2024-11-23T02:55:52.068325" level="FAIL">FlaUiError: Element from XPath '/Window[2]/Pane[1]/Document' could not be found</msg>
+<msg time="2024-11-23T02:55:52.127350" level="INFO">test_desktop-qlica5v_test_notepad_application_1732326952069_1.jpg</msg>
+<msg time="2024-11-23T02:55:52.127350" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="test_desktop-qlica5v_test_notepad_application_1732326952069_1.jpg"&gt;&lt;img src="test_desktop-qlica5v_test_notepad_application_1732326952069_1.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>identifier=${textbox}</arg>
+<arg>value=${TEXT_TO_TYPE}</arg>
+<doc>Inputs value to a textbox module.</doc>
+<status status="FAIL" start="2024-11-23T02:55:50.957642" elapsed="1.111698">FlaUiError: Element from XPath '/Window[2]/Pane[1]/Document' could not be found</status>
+</kw>
+<kw name="Press Key" owner="FlaUILibrary">
+<arg>s'CTRL+S'</arg>
+<arg>None</arg>
+<doc>Keyboard control to execute a user defined one shortcut or text.
+press_only and release_only supports key shortcut only, not text.</doc>
+<status status="NOT RUN" start="2024-11-23T02:55:52.127350" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Exist" owner="FlaUILibrary">
+<arg>identifier=${save_field}</arg>
+<doc>Waits until element exist or timeout was reached. If timeout was reached an FlaUIError occurred.</doc>
+<status status="NOT RUN" start="2024-11-23T02:55:52.127350" elapsed="0.000000"/>
+</kw>
+<kw name="Set Text To Textbox" owner="FlaUILibrary">
+<arg>identifier=${save_field}</arg>
+<arg>value=${SAVE_PATH}</arg>
+<doc>Inputs value to a textbox module.</doc>
+<status status="NOT RUN" start="2024-11-23T02:55:52.127350" elapsed="0.000000"/>
+</kw>
+<kw name="Press Key" owner="FlaUILibrary">
+<arg>s'ENTER'</arg>
+<arg>None</arg>
+<doc>Keyboard control to execute a user defined one shortcut or text.
+press_only and release_only supports key shortcut only, not text.</doc>
+<status status="NOT RUN" start="2024-11-23T02:55:52.132452" elapsed="0.000000"/>
+</kw>
+<kw name="Close Application" owner="FlaUILibrary">
+<arg>${pid}</arg>
+<doc>Closes the attached application.</doc>
+<status status="NOT RUN" start="2024-11-23T02:55:52.132452" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-11-23T02:55:48.888346" elapsed="3.244106">FlaUiError: Element from XPath '/Window[2]/Pane[1]/Document' could not be found</status>
+</test>
+<status status="FAIL" start="2024-11-23T02:55:48.448396" elapsed="3.684056"/>
+</suite>
+<status status="FAIL" start="2024-11-23T02:55:48.445634" elapsed="3.691564"/>
+</suite>
+<status status="FAIL" start="2024-11-23T02:55:48.440537" elapsed="3.697970"/>
+</suite>
+<status status="FAIL" start="2024-11-23T02:55:48.437223" elapsed="3.703289"/>
+</suite>
+<status status="FAIL" start="2024-11-23T02:55:48.417541" elapsed="3.723970"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Section7.11 2">Section7.11 2</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Desktop">Section7.11 2.Desktop</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Blocnotes">Section7.11 2.Desktop.Blocnotes</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Tests">Section7.11 2.Desktop.Blocnotes.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1" name="Blocnote">Section7.11 2.Desktop.Blocnotes.Tests.Blocnote</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-11-22T16:57:04.069905" rpa="false" schemaversion="5">
+<suite id="s1" name="Section8.3" source="C:\Users\Admin\Projects\rbf_book\Sources\tests\section8.3">
+<suite id="s1-s1" name="Approche2 Lib" source="C:\Users\Admin\Projects\rbf_book\Sources\tests\section8.3\approche2_lib">
+<suite id="s1-s1-s1" name="Batteur" source="C:\Users\Admin\Projects\rbf_book\Sources\tests\section8.3\approche2_lib\batteur.robot">
+<test id="s1-s1-s1-t1" name="Jouer" line="9">
+<kw name="Generer Rythmes Inspiration" owner="AiGenRythmes">
+<msg time="2024-11-22T16:57:04.914840" level="INFO">Erreur lors de la génération du rythme inspirant : [Errno 2] No such file or directory: 'prompt_inspiration.txt'</msg>
+<msg time="2024-11-22T16:57:04.914840" level="INFO">@{rythme} = [ ]</msg>
+<var>@{rythme}</var>
+<doc>Génère un rythme basé sur un prompt inspirant pré-défini et renvoie le rythme généré.</doc>
+<status status="PASS" start="2024-11-22T16:57:04.913829" elapsed="0.001011"/>
+</kw>
+<kw name="Acceder a Musicca Batterie" owner="rythmes">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-22T16:57:04.915953" level="INFO">Opening browser 'chrome' to base url 'https://www.musicca.com/fr/batterie/'.</msg>
+<arg>https://www.musicca.com/fr/batterie/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-22T16:57:04.915953" elapsed="2.542934"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-22T16:57:07.458887" elapsed="0.028522"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:04.915953" elapsed="2.571456"/>
+</kw>
+<kw name="Accepter Cookies" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:07.488408" elapsed="0.405945"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Executer rythme">
+<for flavor="IN">
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="NOT RUN" start="2024-11-22T16:57:07.896361" elapsed="0.000000"/>
+</kw>
+<var name="${note}"/>
+<status status="NOT RUN" start="2024-11-22T16:57:07.896361" elapsed="0.000000"/>
+</iter>
+<var>${note}</var>
+<value>@{rythme}</value>
+<status status="NOT RUN" start="2024-11-22T16:57:07.896361" elapsed="0.000000"/>
+</for>
+<arg>@{rythme}</arg>
+<status status="PASS" start="2024-11-22T16:57:07.895398" elapsed="0.001964"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2024-11-22T16:57:07.895398" elapsed="0.001964"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<status status="PASS" start="2024-11-22T16:57:07.894353" elapsed="0.003009"/>
+</for>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-22T16:57:07.897362" elapsed="2.161118"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:04.912170" elapsed="5.147295"/>
+</test>
+<status status="PASS" start="2024-11-22T16:57:04.100107" elapsed="5.961372"/>
+</suite>
+<status status="PASS" start="2024-11-22T16:57:04.091170" elapsed="5.972311"/>
+</suite>
+<status status="PASS" start="2024-11-22T16:57:04.073096" elapsed="5.991383"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Section8.3">Section8.3</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Approche2 Lib">Section8.3.Approche2 Lib</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Batteur">Section8.3.Approche2 Lib.Batteur</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-11-22T16:57:42.849922" rpa="false" schemaversion="5">
+<suite id="s1" name="Batteur" source="C:\Users\Admin\Projects\rbf_book\Sources\tests\section8.3\approche2_lib\batteur.robot">
+<test id="s1-t1" name="Jouer" line="9">
+<kw name="Generer Rythmes Inspiration" owner="AiGenRythmes">
+<msg time="2024-11-22T16:57:50.316652" level="INFO">HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"</msg>
+<msg time="2024-11-22T16:57:50.320651" level="INFO">@{rythme} = [ Grosse Caisse | Hi Hat Ferme | Bpm | Caisse Claire Baguettes | Bpm | Hi Hat Ouvert | Bpm | Cymbale Crash | Bpm | Cymbale Ride | Bpm | Hi Hat Pied | Bpm | Tom Aigu | Bpm | Tom Grave | Bpm | Tom Bas |...</msg>
+<var>@{rythme}</var>
+<doc>Génère un rythme basé sur un prompt inspirant pré-défini et renvoie le rythme généré.</doc>
+<status status="PASS" start="2024-11-22T16:57:43.641533" elapsed="6.679118"/>
+</kw>
+<kw name="Acceder a Musicca Batterie" owner="rythmes">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-22T16:57:50.321603" level="INFO">Opening browser 'chrome' to base url 'https://www.musicca.com/fr/batterie/'.</msg>
+<arg>https://www.musicca.com/fr/batterie/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-22T16:57:50.321603" elapsed="2.553589"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-22T16:57:52.875192" elapsed="0.035454"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:50.321603" elapsed="2.589043"/>
+</kw>
+<kw name="Accepter Cookies" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:52.911645" elapsed="0.406647"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Executer rythme">
+<for flavor="IN">
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:53.320322" elapsed="0.101276"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:53.319304" elapsed="0.102294"/>
+</kw>
+<var name="${note}">Grosse Caisse</var>
+<status status="PASS" start="2024-11-22T16:57:53.319304" elapsed="0.102294"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:53.421598" elapsed="0.101597"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:53.421598" elapsed="0.101597"/>
+</kw>
+<var name="${note}">Hi Hat Ferme</var>
+<status status="PASS" start="2024-11-22T16:57:53.421598" elapsed="0.101597"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:57:53.857690" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:57:53.523195" elapsed="0.334495"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:53.523195" elapsed="0.334495"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:53.523195" elapsed="0.334495"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:57:53.523195" elapsed="0.335002"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Caisse Claire Baguettes" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:53.858197" elapsed="0.101937"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:53.858197" elapsed="0.101937"/>
+</kw>
+<var name="${note}">Caisse Claire Baguettes</var>
+<status status="PASS" start="2024-11-22T16:57:53.858197" elapsed="0.101937"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:57:54.300787" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:57:53.961515" elapsed="0.341965"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:53.960134" elapsed="0.343346"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:53.960134" elapsed="0.344727"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:57:53.960134" elapsed="0.344727"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Hi Hat Ouvert" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:54.304861" elapsed="0.107360"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:54.304861" elapsed="0.108505"/>
+</kw>
+<var name="${note}">Hi Hat Ouvert</var>
+<status status="PASS" start="2024-11-22T16:57:54.304861" elapsed="0.108505"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:57:54.748503" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:57:54.414369" elapsed="0.334134"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:54.414369" elapsed="0.334134"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:54.413366" elapsed="0.335137"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:57:54.413366" elapsed="0.335137"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Cymbale Crash" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:54.749019" elapsed="0.101495"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:54.749019" elapsed="0.101495"/>
+</kw>
+<var name="${note}">Cymbale Crash</var>
+<status status="PASS" start="2024-11-22T16:57:54.749019" elapsed="0.101495"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:57:55.184768" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:57:54.851522" elapsed="0.333246"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:54.851522" elapsed="0.333246"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:54.850514" elapsed="0.334254"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:57:54.850514" elapsed="0.334254"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Cymbale Ride" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:55.185775" elapsed="0.102063"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:55.185775" elapsed="0.102063"/>
+</kw>
+<var name="${note}">Cymbale Ride</var>
+<status status="PASS" start="2024-11-22T16:57:55.185775" elapsed="0.102063"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:57:55.620905" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:57:55.287838" elapsed="0.333067"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:55.287838" elapsed="0.333067"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:55.287838" elapsed="0.333067"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:57:55.287838" elapsed="0.333067"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Hi Hat Pied" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:55.622038" elapsed="0.101381"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:55.622038" elapsed="0.101381"/>
+</kw>
+<var name="${note}">Hi Hat Pied</var>
+<status status="PASS" start="2024-11-22T16:57:55.620905" elapsed="0.102514"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:57:56.057282" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:57:55.723925" elapsed="0.333357"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:55.723925" elapsed="0.333946"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:55.723419" elapsed="0.334452"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:57:55.723419" elapsed="0.334452"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Tom Aigu" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:56.057871" elapsed="0.102963"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:56.057871" elapsed="0.102963"/>
+</kw>
+<var name="${note}">Tom Aigu</var>
+<status status="PASS" start="2024-11-22T16:57:56.057871" elapsed="0.102963"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:57:56.495364" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:57:56.161925" elapsed="0.333439"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:56.160834" elapsed="0.334530"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:56.160834" elapsed="0.334530"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:57:56.160834" elapsed="0.334530"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Tom Grave" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:56.495364" elapsed="0.102148"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:56.495364" elapsed="0.102148"/>
+</kw>
+<var name="${note}">Tom Grave</var>
+<status status="PASS" start="2024-11-22T16:57:56.495364" elapsed="0.102148"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:57:56.932945" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:57:56.599538" elapsed="0.333407"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:56.598538" elapsed="0.334407"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:56.597512" elapsed="0.335433"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:57:56.597512" elapsed="0.335433"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Tom Bas" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:56.933968" elapsed="0.102752"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:56.933968" elapsed="0.102752"/>
+</kw>
+<var name="${note}">Tom Bas</var>
+<status status="PASS" start="2024-11-22T16:57:56.933968" elapsed="0.102752"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:57:57.371131" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:57:57.037826" elapsed="0.333305"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:57.037826" elapsed="0.333305"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:57.036720" elapsed="0.334411"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:57:57.036720" elapsed="0.334411"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:57.372148" elapsed="0.102683"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:57.372148" elapsed="0.102683"/>
+</kw>
+<var name="${note}">Caisse Claire</var>
+<status status="PASS" start="2024-11-22T16:57:57.372148" elapsed="0.102683"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:57:57.810155" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:57:57.475912" elapsed="0.334243"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:57.475912" elapsed="0.334243"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:57.474831" elapsed="0.335324"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:57:57.474831" elapsed="0.335324"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Hi Hat Ouvert" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:57.811174" elapsed="0.103272"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:57.811174" elapsed="0.103272"/>
+</kw>
+<var name="${note}">Hi Hat Ouvert</var>
+<status status="PASS" start="2024-11-22T16:57:57.811174" elapsed="0.103272"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:57:58.249661" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:57:57.916547" elapsed="0.333114"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:57.915545" elapsed="0.334116"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:57.914446" elapsed="0.335215"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:57:57.914446" elapsed="0.335215"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:58.251077" elapsed="0.144280"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:58.249661" elapsed="0.145696"/>
+</kw>
+<var name="${note}">Grosse Caisse</var>
+<status status="PASS" start="2024-11-22T16:57:58.249661" elapsed="0.147180"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:57:58.731218" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:57:58.397844" elapsed="0.333374"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:58.397844" elapsed="0.333919"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:58.396841" elapsed="0.334922"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:57:58.396841" elapsed="0.334922"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Caisse Claire" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:58.732857" elapsed="0.101530"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:58.731763" elapsed="0.102624"/>
+</kw>
+<var name="${note}">Caisse Claire</var>
+<status status="PASS" start="2024-11-22T16:57:58.731763" elapsed="0.102624"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:57:59.168774" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:57:58.835400" elapsed="0.333374"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:58.834387" elapsed="0.334387"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:58.834387" elapsed="0.334893"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:57:58.834387" elapsed="0.334893"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Hi Hat Ouvert" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:59.169280" elapsed="0.102217"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:59.169280" elapsed="0.102217"/>
+</kw>
+<var name="${note}">Hi Hat Ouvert</var>
+<status status="PASS" start="2024-11-22T16:57:59.169280" elapsed="0.102217"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:57:59.605918" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:57:59.272521" elapsed="0.333918"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:59.272521" elapsed="0.333918"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:59.271497" elapsed="0.334942"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:57:59.271497" elapsed="0.334942"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Grosse Caisse" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:57:59.607447" elapsed="0.101922"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:59.606439" elapsed="0.102930"/>
+</kw>
+<var name="${note}">Grosse Caisse</var>
+<status status="PASS" start="2024-11-22T16:57:59.606439" elapsed="0.102930"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:58:00.043579" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:57:59.710396" elapsed="0.333183"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:59.709369" elapsed="0.334210"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:57:59.709369" elapsed="0.334716"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:57:59.709369" elapsed="0.334716"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Hi Hat Ferme" owner="BatterieMusicca">
+<status status="PASS" start="2024-11-22T16:58:00.044085" elapsed="0.102701"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:58:00.044085" elapsed="0.102701"/>
+</kw>
+<var name="${note}">Hi Hat Ferme</var>
+<status status="PASS" start="2024-11-22T16:58:00.044085" elapsed="0.102701"/>
+</iter>
+<iter>
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="bpm" owner="rythmes">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-22T16:58:00.480354" level="INFO">Slept 333 milliseconds.</msg>
+<arg>333ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-22T16:58:00.146786" elapsed="0.333568"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:58:00.146786" elapsed="0.334160"/>
+</kw>
+<arg>${note}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-11-22T16:58:00.146786" elapsed="0.334160"/>
+</kw>
+<var name="${note}">Bpm</var>
+<status status="PASS" start="2024-11-22T16:58:00.146786" elapsed="0.334160"/>
+</iter>
+<var>${note}</var>
+<value>@{rythme}</value>
+<status status="PASS" start="2024-11-22T16:57:53.319304" elapsed="7.161642"/>
+</for>
+<arg>@{rythme}</arg>
+<status status="PASS" start="2024-11-22T16:57:53.319304" elapsed="7.161642"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2024-11-22T16:57:53.318798" elapsed="7.162148"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<status status="PASS" start="2024-11-22T16:57:53.318292" elapsed="7.162654"/>
+</for>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-22T16:58:00.481953" elapsed="2.159958"/>
+</kw>
+<status status="PASS" start="2024-11-22T16:57:43.640542" elapsed="19.001369"/>
+</test>
+<status status="PASS" start="2024-11-22T16:57:42.850921" elapsed="19.790990"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Batteur">Batteur</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
