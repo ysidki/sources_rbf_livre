@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport de Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        header img {
+            height: 50px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .chart-container {
+            width: 50%;
+            margin: 20px auto;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo_robot_framework.png" alt="Logo Robot Framework">
+        <h1>Rapport de test</h1>
+        <img src="logo_entreprise.png" alt="Logo Entreprise">
+    </header>
+    <main>
+        <div class="chart-container">
+            <canvas id="testChart"></canvas>
+        </div>
+    </main>
+    <footer>
+        <p>ENI Éditions</p>
+        <p>Auteur : Yassine SIDKI</p>
+    </footer>
+    <script>
+        const testResults = {
+            labels: ["Reussis", "Echoues"],
+            datasets: [{
+                label: "Pourcentage Tests",
+                data: [50.00, 50.00],
+                backgroundColor: ["rgba(75, 192, 192, 0.6)", "rgba(255, 99, 132, 0.6)"],
+                borderColor: ["rgba(75, 192, 192, 1)", "rgba(255, 99, 132, 1)"],
+                borderWidth: 1
+            }]
+        };
+
+        const config = {
+            type: "doughnut",
+            data: testResults,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: "top"
+                    },
+                    tooltip: {
+                        enabled: true
+                    }
+                }
+            }
+        };
+
+        const testChart = new Chart(
+            document.getElementById("testChart"),
+            config
+        );
+    </script>
+</body>
+</html>

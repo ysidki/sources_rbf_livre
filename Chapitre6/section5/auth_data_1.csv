@@ -1,0 +1,4 @@
+*** Test Case ***;${nom};${email};${password}  
+Inscription Valide 1;John Doe;john.doe@email.com;Pass1234 
+Inscription Valide 2;Jane Smith;jane.smith@email.com;Pass5678 
+Inscription Invalide 1;InvalideNom;invalide.com;short 

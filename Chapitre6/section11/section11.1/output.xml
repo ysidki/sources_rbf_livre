@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.7 on win32)" generated="2025-01-30T17:05:24.060621" rpa="false" schemaversion="5">
+<suite id="s1" name="Scenario1" source="C:\Users\Admin\Projects\rbf_book\Sources\Sources_rbf_livre\Chapitre6\section11\section11.1\scenario1.robot">
+<test id="s1-t1" name="do a valid search" line="24">
+<kw name="do a search">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-30T17:05:24.253009" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-30T17:05:24.253009" elapsed="3.079131"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-30T17:05:27.332140" elapsed="0.022080"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${button_accept_cookies}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-30T17:05:27.354220" elapsed="0.021165"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-30T17:05:27.375385" level="INFO">Clicking element '//*[@id="L2AGLb"]'.</msg>
+<arg>${button_accept_cookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T17:05:27.375385" elapsed="0.071478"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${search_field}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-30T17:05:27.446863" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-30T17:05:27.446863" level="INFO">Typing text 'robot framework' into text field '//*[@id="APjFqb"]'.</msg>
+<arg>${search_field}</arg>
+<arg>${search_input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T17:05:27.446863" elapsed="0.142866"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-30T17:05:32.590501" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-30T17:05:27.589729" elapsed="5.000772"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-01-30T17:05:32.590501" level="INFO">Sending key(s) ('RETURN',) to //*[@id="APjFqb"] element.</msg>
+<msg time="2025-01-30T17:05:32.901691" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-01-30T17:05:32.901691" level="INFO">Releasing special key RETURN.</msg>
+<arg>${search_field}</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-01-30T17:05:32.590501" elapsed="1.351592"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2025-01-30T17:05:39.194745" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-30T17:05:39.194745" level="FAIL">Text 'robot framework' did not appear in 5 seconds.</msg>
+<arg>${search_input}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2025-01-30T17:05:33.942093" elapsed="5.252652">Text 'robot framework' did not appear in 5 seconds.</status>
+</kw>
+<arg>${Valid_search}</arg>
+<status status="FAIL" start="2025-01-30T17:05:24.253009" elapsed="14.941736">Text 'robot framework' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-30T17:05:39.194745" elapsed="2.334165"/>
+</kw>
+<status status="FAIL" start="2025-01-30T17:05:24.253009" elapsed="17.275901">Text 'robot framework' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t2" name="do an empty search" line="25">
+<kw name="do a search">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-30T17:05:41.530223" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-30T17:05:41.530223" elapsed="1.939056"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-30T17:05:43.470278" elapsed="0.037080"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${button_accept_cookies}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-30T17:05:43.507358" elapsed="0.017291"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-30T17:05:43.525672" level="INFO">Clicking element '//*[@id="L2AGLb"]'.</msg>
+<arg>${button_accept_cookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T17:05:43.525672" elapsed="0.059257"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${search_field}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-30T17:05:43.584929" elapsed="0.011205"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-30T17:05:43.596134" level="INFO">Typing text '""' into text field '//*[@id="APjFqb"]'.</msg>
+<arg>${search_field}</arg>
+<arg>${search_input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T17:05:43.596134" elapsed="0.077590"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-30T17:05:48.675535" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-30T17:05:43.673724" elapsed="5.001811"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-01-30T17:05:48.675535" level="INFO">Sending key(s) ('RETURN',) to //*[@id="APjFqb"] element.</msg>
+<msg time="2025-01-30T17:05:48.974195" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-01-30T17:05:48.974195" level="INFO">Releasing special key RETURN.</msg>
+<arg>${search_field}</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-01-30T17:05:48.675535" elapsed="1.160840"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${search_input}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-30T17:05:49.837859" elapsed="5.306581"/>
+</kw>
+<arg>${Empty_search}</arg>
+<status status="PASS" start="2025-01-30T17:05:41.530223" elapsed="13.614217"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-30T17:05:55.145443" elapsed="2.329823"/>
+</kw>
+<status status="PASS" start="2025-01-30T17:05:41.530223" elapsed="15.945043"/>
+</test>
+<test id="s1-t3" name="do a search with special characters" line="26">
+<kw name="do a search">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-30T17:05:57.475266" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-30T17:05:57.475266" elapsed="2.095096"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-30T17:05:59.570362" elapsed="0.033752"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${button_accept_cookies}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-30T17:05:59.606475" elapsed="0.018201"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-30T17:05:59.625671" level="INFO">Clicking element '//*[@id="L2AGLb"]'.</msg>
+<arg>${button_accept_cookies}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T17:05:59.625671" elapsed="0.074670"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${search_field}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-30T17:05:59.700341" elapsed="0.002923"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-30T17:05:59.709415" level="INFO">Typing text '!@#$%^&amp;*()' into text field '//*[@id="APjFqb"]'.</msg>
+<arg>${search_field}</arg>
+<arg>${search_input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-30T17:05:59.709415" elapsed="0.108851"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-30T17:06:04.819083" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-30T17:05:59.818266" elapsed="5.000817"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-01-30T17:06:04.819083" level="INFO">Sending key(s) ('RETURN',) to //*[@id="APjFqb"] element.</msg>
+<msg time="2025-01-30T17:06:05.119495" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-01-30T17:06:05.119495" level="INFO">Releasing special key RETURN.</msg>
+<arg>${search_field}</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-01-30T17:06:04.819083" elapsed="1.381069"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2025-01-30T17:06:07.502319" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6008F02F5+28725]
+	(No symbol) [0x00007FF600852AE0]
+	(No symbol) [0x00007FF6006E510A]
+	(No symbol) [0x00007FF6006BEEA5]
+	(No symbol) [0x00007FF600766F87]
+	(No symbol) [0x00007FF60077FA52]
+	(No symbol) [0x00007FF60075FD53]
+	(No symbol) [0x00007FF60072A0E3]
+	(No symbol) [0x00007FF60072B471]
+	GetHandleVerifier [0x00007FF600C1F30D+3366989]
+	GetHandleVerifier [0x00007FF600C312F0+3440688]
+	GetHandleVerifier [0x00007FF600C278FD+3401277]
+	GetHandleVerifier [0x00007FF6009BAAAB+858091]
+	(No symbol) [0x00007FF60085E74F]
+	(No symbol) [0x00007FF60085A304]
+	(No symbol) [0x00007FF60085A49D]
+	(No symbol) [0x00007FF600848B69]
+	BaseThreadInitThunk [0x00007FFEFD72259D+29]
+	RtlUserThreadStart [0x00007FFEFE3EAF38+40]
+</msg>
+<msg time="2025-01-30T17:06:07.503921" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6008F02F5+28725]
+	(No symbol) [0x00007FF600852AE0]
+	(No symbol) [0x00007FF6006E510A]
+	(No symbol) [0x00007FF6006BEEA5]
+	(No symbol) [0x00007FF600766F87]
+	(No symbol) [0x00007FF60077FA52]
+	(No symbol) [0x00007FF60075FD53]
+	(No symbol) [0x00007FF60072A0E3]
+	(No symbol) [0x00007FF60072B471]
+	GetHandleVerifier [0x00007FF600C1F30D+3366989]
+	GetHandleVerifier [0x00007FF600C312F0+3440688]
+	GetHandleVerifier [0x00007FF600C278FD+3401277]
+	GetHandleVerifier [0x00007FF6009BAAAB+858091]
+	(No symbol) [0x00007FF60085E74F]
+	(No symbol) [0x00007FF60085A304]
+	(No symbol) [0x00007FF60085A49D]
+	(No symbol) [0x00007FF600848B69]
+	BaseThreadInitThunk [0x00007FFEFD72259D+29]
+	RtlUserThreadStart [0x00007FFEFE3EAF38+40]
+</msg>
+<arg>${search_input}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2025-01-30T17:06:06.200152" elapsed="1.373012">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6008F02F5+28725]
+	(No symbol) [0x00007FF600852AE0]
+	(No symbol) [0x00007FF6006E510A]
+	(No symbol) [0x00007FF6006BEEA5]
+	(No symbol) [0x00007FF600766F87]
+	(No symbol) [0x00007FF60077FA52]
+	(No symbol) [0x00007FF60075FD53]
+	(No symbol) [0x00007FF60072A0E3]
+	(No symbol) [0x00007FF60072B471]
+	GetHandleVerifier [0x00007FF600C1F30D+3366989]
+	GetHandleVerifier [0x00007FF600C312F0+3440688]
+	GetHandleVerifier [0x00007FF600C278FD+3401277]
+	GetHandleVerifier [0x00007FF6009BAAAB+858091]
+	(No symbol) [0x00007FF60085E74F]
+	(No symbol) [0x00007FF60085A304]
+	(No symbol) [0x00007FF60085A49D]
+	(No symbol) [0x00007FF600848B69]
+	BaseThreadInitThunk [0x00007FFEFD72259D+29]
+	RtlUserThreadStart [0x00007FFEFE3EAF38+40]
+</status>
+</kw>
+<arg>${Special_char_search}</arg>
+<status status="FAIL" start="2025-01-30T17:05:57.475266" elapsed="10.097898">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6008F02F5+28725]
+	(No symbol) [0x00007FF600852AE0]
+	(No symbol) [0x00007FF6006E510A]
+	(No symbol) [0x00007FF6006BEEA5]
+	(No symbol) [0x00007FF600766F87]
+	(No symbol) [0x00007FF60077FA52]
+	(No symbol) [0x00007FF60075FD53]
+	(No symbol) [0x00007FF60072A0E3]
+	(No symbol) [0x00007FF60072B471]
+	GetHandleVerifier [0x00007FF600C1F30D+3366989]
+	GetHandleVerifier [0x00007FF600C312F0+3440688]
+	GetHandleVerifier [0x00007FF600C278FD+3401277]
+	GetHandleVerifier [0x00007FF6009BAAAB+858091]
+	(No symbol) [0x00007FF60085E74F]
+	(No symbol) [0x00007FF60085A304]
+	(No symbol) [0x00007FF60085A49D]
+	(No symbol) [0x00007FF600848B69]
+	BaseThreadInitThunk [0x00007FFEFD72259D+29]
+	RtlUserThreadStart [0x00007FFEFE3EAF38+40]
+</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2025-01-30T17:06:09.658460" level="ERROR">When closing browser, received exception: Execution terminated by signal</msg>
+<msg time="2025-01-30T17:06:09.658460" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<doc>Closes the current browser.</doc>
+<status status="FAIL" start="2025-01-30T17:06:07.574164" elapsed="2.084296">Execution terminated by signal</status>
+</kw>
+<status status="FAIL" start="2025-01-30T17:05:57.475266" elapsed="12.183194">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6008F02F5+28725]
+	(No symbol) [0x00007FF600852AE0]
+	(No symbol) [0x00007FF6006E510A]
+	(No symbol) [0x00007FF6006BEEA5]
+	(No symbol) [0x00007FF600766F87]
+	(No symbol) [0x00007FF60077FA52]
+	(No symbol) [0x00007FF60075FD53]
+	(No symbol) [0x00007FF60072A0E3]
+	(No symbol) [0x00007FF60072B471]
+	GetHandleVerifier [0x00007FF600C1F30D+3366989]
+	GetHandleVerifier [0x00007FF600C312F0+3440688]
+	GetHandleVerifier [0x00007FF600C278FD+3401277]
+	GetHandleVerifier [0x00007FF6009BAAAB+858091]
+	(No symbol) [0x00007FF60085E74F]
+	(No symbol) [0x00007FF60085A304]
+	(No symbol) [0x00007FF60085A49D]
+	(No symbol) [0x00007FF600848B69]
+	BaseThreadInitThunk [0x00007FFEFD72259D+29]
+	RtlUserThreadStart [0x00007FFEFE3EAF38+40]
+
+
+Also teardown failed:
+Execution terminated by signal</status>
+</test>
+<test id="s1-t4" name="do a search with a long search term" line="27">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-01-30T17:06:09.667871" elapsed="0.001006">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t5" name="do a search with whitespace" line="28">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-01-30T17:06:09.668877" elapsed="0.001000">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t6" name="do a search with numbers" line="29">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-01-30T17:06:09.672366" elapsed="0.000286">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t7" name="do a search with spaces" line="30">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-01-30T17:06:09.672652" elapsed="0.001568">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" start="2025-01-30T17:05:24.060621" elapsed="45.615144"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat info="combined" combined="NOT robot:exit" pass="1" fail="2" skip="0">NOT robot:exit</stat>
+</tag>
+<suite>
+<stat name="Scenario1" id="s1" pass="1" fail="6" skip="0">Scenario1</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-01-30T17:06:07.502319" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6008F02F5+28725]
+	(No symbol) [0x00007FF600852AE0]
+	(No symbol) [0x00007FF6006E510A]
+	(No symbol) [0x00007FF6006BEEA5]
+	(No symbol) [0x00007FF600766F87]
+	(No symbol) [0x00007FF60077FA52]
+	(No symbol) [0x00007FF60075FD53]
+	(No symbol) [0x00007FF60072A0E3]
+	(No symbol) [0x00007FF60072B471]
+	GetHandleVerifier [0x00007FF600C1F30D+3366989]
+	GetHandleVerifier [0x00007FF600C312F0+3440688]
+	GetHandleVerifier [0x00007FF600C278FD+3401277]
+	GetHandleVerifier [0x00007FF6009BAAAB+858091]
+	(No symbol) [0x00007FF60085E74F]
+	(No symbol) [0x00007FF60085A304]
+	(No symbol) [0x00007FF60085A49D]
+	(No symbol) [0x00007FF600848B69]
+	BaseThreadInitThunk [0x00007FFEFD72259D+29]
+	RtlUserThreadStart [0x00007FFEFE3EAF38+40]
+</msg>
+<msg time="2025-01-30T17:06:09.658460" level="ERROR">When closing browser, received exception: Execution terminated by signal</msg>
+</errors>
+</robot>

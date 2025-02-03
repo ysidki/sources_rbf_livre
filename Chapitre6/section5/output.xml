@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.7 on win32)" generated="2025-01-30T16:00:55.460721" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Datadriver Desktop" source="C:\Users\Admin\Projects\rbf_book\Sources\Sources_rbf_livre\Chapitre6\section5\test_datadriver_desktop.robot">
+<test id="s1-t1" name="Conversion en PDF" line="8">
+<msg time="2025-01-30T16:00:55.498499" level="INFO">${DataDriver_TEST_DATA} = {'test_case_name': 'Conversion en PDF', 'arguments': {'${input_file}': 'document.docx', '${output_format}': 'pdf  '}, 'tags': None, 'documentation': None}</msg>
+<kw name="Tester Conversion">
+<kw name="Run Process" owner="Process">
+<msg time="2025-01-30T16:00:55.498499" level="FAIL">Keyword argument 'document.docx --format' is not supported by this keyword.</msg>
+<arg>file_converter.exe</arg>
+<arg>${input_file} --format=${output_format}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="FAIL" start="2025-01-30T16:00:55.498499" elapsed="0.000000">Keyword argument 'document.docx --format' is not supported by this keyword.</status>
+</kw>
+<kw name="Should Exist" owner="OperatingSystem">
+<arg>output/${output_format}/${input_file}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<status status="NOT RUN" start="2025-01-30T16:00:55.498499" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Conversion réussie : ${input_file} -&gt; ${output_format}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-01-30T16:00:55.498499" elapsed="0.000000"/>
+</kw>
+<arg>input_file=document.docx</arg>
+<arg>output_format=pdf  </arg>
+<status status="FAIL" start="2025-01-30T16:00:55.498499" elapsed="0.000000">Keyword argument 'document.docx --format' is not supported by this keyword.</status>
+</kw>
+<status status="FAIL" start="2025-01-30T16:00:55.498499" elapsed="0.000000">Keyword argument 'document.docx --format' is not supported by this keyword.</status>
+</test>
+<test id="s1-t2" name="Conversion en Image" line="8">
+<msg time="2025-01-30T16:00:55.514009" level="INFO">${DataDriver_TEST_DATA} = {'test_case_name': 'Conversion en Image', 'arguments': {'${input_file}': 'presentation.pptx', '${output_format}': 'png  '}, 'tags': None, 'documentation': None}</msg>
+<kw name="Tester Conversion">
+<kw name="Run Process" owner="Process">
+<msg time="2025-01-30T16:00:55.514009" level="FAIL">Keyword argument 'presentation.pptx --format' is not supported by this keyword.</msg>
+<arg>file_converter.exe</arg>
+<arg>${input_file} --format=${output_format}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="FAIL" start="2025-01-30T16:00:55.514009" elapsed="0.000000">Keyword argument 'presentation.pptx --format' is not supported by this keyword.</status>
+</kw>
+<kw name="Should Exist" owner="OperatingSystem">
+<arg>output/${output_format}/${input_file}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<status status="NOT RUN" start="2025-01-30T16:00:55.515026" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Conversion réussie : ${input_file} -&gt; ${output_format}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-01-30T16:00:55.515026" elapsed="0.000000"/>
+</kw>
+<arg>input_file=presentation.pptx</arg>
+<arg>output_format=png  </arg>
+<status status="FAIL" start="2025-01-30T16:00:55.514009" elapsed="0.001017">Keyword argument 'presentation.pptx --format' is not supported by this keyword.</status>
+</kw>
+<status status="FAIL" start="2025-01-30T16:00:55.512867" elapsed="0.002582">Keyword argument 'presentation.pptx --format' is not supported by this keyword.</status>
+</test>
+<test id="s1-t3" name="Conversion Invalide" line="8">
+<msg time="2025-01-30T16:00:55.519152" level="INFO">${DataDriver_TEST_DATA} = {'test_case_name': 'Conversion Invalide', 'arguments': {'${input_file}': 'fichier_invalide', '${output_format}': 'unknown '}, 'tags': None, 'documentation': None}</msg>
+<kw name="Tester Conversion">
+<kw name="Run Process" owner="Process">
+<msg time="2025-01-30T16:00:55.519265" level="FAIL">Keyword argument 'fichier_invalide --format' is not supported by this keyword.</msg>
+<arg>file_converter.exe</arg>
+<arg>${input_file} --format=${output_format}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="FAIL" start="2025-01-30T16:00:55.519265" elapsed="0.000000">Keyword argument 'fichier_invalide --format' is not supported by this keyword.</status>
+</kw>
+<kw name="Should Exist" owner="OperatingSystem">
+<arg>output/${output_format}/${input_file}</arg>
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<status status="NOT RUN" start="2025-01-30T16:00:55.519265" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Conversion réussie : ${input_file} -&gt; ${output_format}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-01-30T16:00:55.519265" elapsed="0.000000"/>
+</kw>
+<arg>input_file=fichier_invalide</arg>
+<arg>output_format=unknown </arg>
+<status status="FAIL" start="2025-01-30T16:00:55.519265" elapsed="0.000000">Keyword argument 'fichier_invalide --format' is not supported by this keyword.</status>
+</kw>
+<status status="FAIL" start="2025-01-30T16:00:55.517081" elapsed="0.003182">Keyword argument 'fichier_invalide --format' is not supported by this keyword.</status>
+</test>
+<status status="FAIL" start="2025-01-30T16:00:55.461722" elapsed="0.060855"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Datadriver Desktop" id="s1" pass="0" fail="3" skip="0">Test Datadriver Desktop</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

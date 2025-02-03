@@ -1,3 +1,0 @@
-robot tests1/
-robot tests2/
-robot tests3/

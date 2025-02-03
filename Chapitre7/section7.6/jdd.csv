@@ -1,5 +1,0 @@
-*** Test cases ***;${compte_source};${compte_cible};${montant}
-test1;particulier;pro;1000
-test2;livret_a;pro;500
-test3;courant;livret_a;200
-test4;pro;epargne;3000

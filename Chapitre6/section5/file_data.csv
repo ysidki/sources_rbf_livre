@@ -1,0 +1,4 @@
+*** Test Case ***;${input_file};${output_format}
+Conversion en PDF;document.docx;pdf  
+Conversion en Image;presentation.pptx;png  
+Conversion Invalide;fichier_invalide;unknown 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.7 on win32)" generated="2025-01-30T11:55:56.597544" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\Admin\Projects\rbf_book\Sources\Sources_rbf_livre\Chapitre6\section2\test.robot">
+<test id="s1-t1" name="simple test" line="2">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-30T11:55:56.622976" level="INFO">hello test</msg>
+<arg>hello test</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-30T11:55:56.622976" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-01-30T11:55:56.622976" elapsed="0.000000"/>
+</test>
+<test id="s1-t2" name="Test Supplémentaire">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-30T11:55:56.632054" level="INFO">Ceci est un test supplémentaire.</msg>
+<arg>Ceci est un test supplémentaire.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-30T11:55:56.632054" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-01-30T11:55:56.632054" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2025-01-30T11:55:56.598550" elapsed="0.033504"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="2" fail="0" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

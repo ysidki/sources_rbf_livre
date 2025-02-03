@@ -1,0 +1,37 @@
+*** Settings *** 
+Suite Setup       Ouvrir Connexion Base De Données 
+Suite Teardown    Fermer Connexion Base De Données 
+
+ 
+
+*** Test Cases *** 
+Test 1 - Vérification de données 
+    Vérifier Les Données    "utilisateur1" 
+
+
+Test 2 - Vérification d'insertion 
+    Insérer Données    "nouvel_utilisateur" 
+    Vérifier Les Données    "nouvel_utilisateur" 
+
+ 
+
+*** Keywords *** 
+Ouvrir Connexion Base De Données 
+    # Define your actions here 
+
+ 
+
+Fermer Connexion Base De Données 
+    # Define your actions here 
+
+ 
+
+Vérifier Les Données 
+    [Arguments]    ${utilisateur} 
+    # Define your actions here 
+
+ 
+
+Insérer Les Données 
+    [Arguments]    ${utilisateur} 
+    # Define your actions here 

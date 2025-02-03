@@ -1,0 +1,11 @@
+*** Settings *** 
+Library    SeleniumLibrary 
+Test Setup    Open Browser    ${URL}    chrome 
+Test Teardown    Close Browser 
+
+ 
+
+*** Test Cases *** 
+
+Test 1 - Connexion utilisateur 
+    # Define your actions here 

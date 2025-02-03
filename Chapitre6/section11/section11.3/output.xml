@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.7 on win32)" generated="2025-01-30T17:08:16.069920" rpa="false" schemaversion="5">
+<suite id="s1" name="Scenario" source="C:\Users\Admin\Projects\rbf_book\Sources\Sources_rbf_livre\Chapitre6\section11\section11.3\scenario.robot">
+<test id="s1-t1" name="Test Notepad Application" line="15">
+<kw name="Launch Application" owner="FlaUILibrary">
+<msg time="2025-01-30T17:08:16.613948" level="INFO">${pid} = 19544</msg>
+<var>${pid}</var>
+<arg>${NOTEPAD_PATH}</arg>
+<doc>Launches an application.</doc>
+<status status="PASS" start="2025-01-30T17:08:16.494992" elapsed="0.118956"/>
+</kw>
+<kw name="Wait Until Element Exist" owner="FlaUILibrary">
+<arg>identifier=${menu_file}</arg>
+<doc>Waits until element exist or timeout was reached. If timeout was reached an FlaUIError occurred.</doc>
+<status status="PASS" start="2025-01-30T17:08:16.613948" elapsed="0.271452"/>
+</kw>
+<kw name="Click" owner="FlaUILibrary">
+<arg>${menu_file}</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" start="2025-01-30T17:08:16.885400" elapsed="0.284850"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-30T17:08:17.670533" level="INFO">Slept 500 milliseconds.</msg>
+<arg>500ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-30T17:08:17.170250" elapsed="0.500283"/>
+</kw>
+<kw name="Press Key" owner="FlaUILibrary">
+<arg>s'DOWN'</arg>
+<arg>None</arg>
+<doc>Keyboard control to execute a user defined one shortcut or text.
+press_only and release_only supports key shortcut only, not text.</doc>
+<status status="PASS" start="2025-01-30T17:08:17.670533" elapsed="0.006115"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-30T17:08:18.177309" level="INFO">Slept 500 milliseconds.</msg>
+<arg>500ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-30T17:08:17.676648" elapsed="0.500661"/>
+</kw>
+<kw name="Press Key" owner="FlaUILibrary">
+<arg>s'UP'</arg>
+<arg>None</arg>
+<doc>Keyboard control to execute a user defined one shortcut or text.
+press_only and release_only supports key shortcut only, not text.</doc>
+<status status="PASS" start="2025-01-30T17:08:18.177309" elapsed="0.002436"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-30T17:08:18.680937" level="INFO">Slept 500 milliseconds.</msg>
+<arg>500ms</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-30T17:08:18.179745" elapsed="0.501192"/>
+</kw>
+<kw name="Press Key" owner="FlaUILibrary">
+<arg>s'ENTER'</arg>
+<arg>None</arg>
+<doc>Keyboard control to execute a user defined one shortcut or text.
+press_only and release_only supports key shortcut only, not text.</doc>
+<status status="PASS" start="2025-01-30T17:08:18.682008" elapsed="0.000530"/>
+</kw>
+<kw name="Wait Until Element Exist" owner="FlaUILibrary">
+<msg time="2025-01-30T17:08:29.521828" level="INFO">test_desktop-qlica5v_test_notepad_application_1738253309363.jpg</msg>
+<msg time="2025-01-30T17:08:29.533351" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="test_desktop-qlica5v_test_notepad_application_1738253309363.jpg"&gt;&lt;img src="test_desktop-qlica5v_test_notepad_application_1738253309363.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-30T17:08:29.533983" level="FAIL">FlaUiError: Element '/Window[2]/Pane[1]/Document' does not exist</msg>
+<arg>identifier=${textbox}</arg>
+<doc>Waits until element exist or timeout was reached. If timeout was reached an FlaUIError occurred.</doc>
+<status status="FAIL" start="2025-01-30T17:08:18.682538" elapsed="10.866554">FlaUiError: Element '/Window[2]/Pane[1]/Document' does not exist</status>
+</kw>
+<kw name="Set Text To Textbox" owner="FlaUILibrary">
+<arg>identifier=${textbox}</arg>
+<arg>value=${TEXT_TO_TYPE}</arg>
+<doc>Inputs value to a textbox module.</doc>
+<status status="NOT RUN" start="2025-01-30T17:08:29.549092" elapsed="0.000000"/>
+</kw>
+<kw name="Press Key" owner="FlaUILibrary">
+<arg>s'CTRL+S'</arg>
+<arg>None</arg>
+<doc>Keyboard control to execute a user defined one shortcut or text.
+press_only and release_only supports key shortcut only, not text.</doc>
+<status status="NOT RUN" start="2025-01-30T17:08:29.549092" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Exist" owner="FlaUILibrary">
+<arg>identifier=${save_field}</arg>
+<doc>Waits until element exist or timeout was reached. If timeout was reached an FlaUIError occurred.</doc>
+<status status="NOT RUN" start="2025-01-30T17:08:29.549092" elapsed="0.000000"/>
+</kw>
+<kw name="Set Text To Textbox" owner="FlaUILibrary">
+<arg>identifier=${save_field}</arg>
+<arg>value=${SAVE_PATH}</arg>
+<doc>Inputs value to a textbox module.</doc>
+<status status="NOT RUN" start="2025-01-30T17:08:29.549092" elapsed="0.000000"/>
+</kw>
+<kw name="Press Key" owner="FlaUILibrary">
+<arg>s'ENTER'</arg>
+<arg>None</arg>
+<doc>Keyboard control to execute a user defined one shortcut or text.
+press_only and release_only supports key shortcut only, not text.</doc>
+<status status="NOT RUN" start="2025-01-30T17:08:29.549092" elapsed="0.000000"/>
+</kw>
+<kw name="Close Application" owner="FlaUILibrary">
+<arg>${pid}</arg>
+<doc>Closes the attached application.</doc>
+<status status="NOT RUN" start="2025-01-30T17:08:29.549092" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-01-30T17:08:16.494992" elapsed="13.054100">FlaUiError: Element '/Window[2]/Pane[1]/Document' does not exist</status>
+</test>
+<status status="FAIL" start="2025-01-30T17:08:16.069920" elapsed="13.479172"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Scenario" id="s1" pass="0" fail="1" skip="0">Scenario</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
